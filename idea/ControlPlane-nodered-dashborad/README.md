@@ -1,10 +1,16 @@
-# ether Flow —  Dashboard for Node-RED
+# ether Flow —  Dashboard for Node-RED for real-time monitoring with live status
 
 
 ## Features
-Dashboard f
 
-A production-ready React app connecting Node-RED with Google OAuth, Facebook OAuth, and local authentication.
+React app connecting Node-RED with Google OAuth, Facebook OAuth, and local authentication.
+Can be configured fully with authentication and the details of monitoring for NodeRed 
+Dashborad can execute NodeRed flow,view in progress and provide log information
+Log information for last run of flow can be viewd and saved in the flow canvas
+logs information are highlighted with differnt levels 
+
+
+
 
 ## Project Structure
 

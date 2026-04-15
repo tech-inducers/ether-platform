@@ -2,9 +2,9 @@
   {
     "id": "nf-tab",
     "type": "tab",
-    "label": "NodeFlow Bridge",
+    "label": "ether Bridge",
     "disabled": false,
-    "info": "NodeFlow dashboard bridge. Provides real-time status via HTTP endpoint polling."
+    "info": "ether dashboard bridge. Provides real-time status via HTTP endpoint polling."
   },
 
   {
