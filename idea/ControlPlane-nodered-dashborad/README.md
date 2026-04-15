@@ -6,8 +6,8 @@
 
 
 
-(images/EtherFlow_screenShot.png)
-(images/image-1.png)
+![](images/EtherFlow_screenShot.png)
+![](images/image-1.png)
 
 
 
