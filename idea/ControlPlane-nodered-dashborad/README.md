@@ -1,4 +1,8 @@
-# NodeFlow — React Auth Dashboard for Node-RED
+# ether Flow —  Dashboard for Node-RED
+
+
+## Features
+Dashboard f
 
 A production-ready React app connecting Node-RED with Google OAuth, Facebook OAuth, and local authentication.
 
