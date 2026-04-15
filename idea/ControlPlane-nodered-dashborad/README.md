@@ -1,17 +1,28 @@
 # ether —  Dashboard for Node-RED with  real-time monitoring and live status
 
-![Screenshot](images/EtherFlow_screenShot.png)
-![Screenshot](images/image-1.png)
+
+
+
+
+
+
+(images/EtherFlow_screenShot.png)
+(images/image-1.png)
+
+
+
+
 
 
 
 ## Features
 
 React app connecting Node-RED with Google OAuth, Facebook OAuth, and local authentication.
-Can be configured fully with authentication and the details of monitoring for NodeRed 
-Dashborad can execute NodeRed flow,view in progress and provide log information
-Log information for last run of flow can be viewd and saved in the flow canvas
-logs information are highlighted with differnt levels 
+Can be configured fully with authentication and the details of monitoring for NodeRed
+Dashboard can execute Node-Red flow, view in progress and provide log information
+Log information for last run of flow can be viewed and saved in the flow canvas
+logs information are highlighted with different levels
+
 
 
 
@@ -35,7 +46,7 @@ nodered-auth-app/
 
 ## Quick Start
 
-### 1. Install & run the React app
+### 1\. Install \& run the React app
 
 ```bash
 cd nodered-auth-app
@@ -44,37 +55,37 @@ npm start
 # Opens at http://localhost:3000
 ```
 
-### 2. Import flows into Node-RED
+### 2\. Import flows into Node-RED
 
 1. Open Node-RED → Menu → Import
 2. Paste contents of `node-red-auth-flows.json`
 3. Click Import → Deploy
 
-### 3. Local auth works immediately
+### 3\. Local auth works immediately
 
-- Go to http://localhost:3000
-- Enter any email + password (min 6 chars)
-- Dashboard opens in demo mode if Node-RED isn't running
+* Go to http://localhost:3000
+* Enter any email + password (min 6 chars)
+* Dashboard opens in demo mode if Node-RED isn't running
 
----
+\---
 
 ## Google OAuth Setup
 
 1. Go to https://console.cloud.google.com
-2. Create a project → APIs & Services → Credentials
+2. Create a project → APIs \& Services → Credentials
 3. Create OAuth 2.0 Client ID (Web application)
 4. Add authorized redirect URI: `http://localhost:1880/auth/google/callback`
 5. Copy Client ID and Client Secret
 6. In Node-RED settings.js, add:
 
 ```js
-process.env.GOOGLE_CLIENT_ID     = 'your-client-id';
-process.env.GOOGLE_CLIENT_SECRET = 'your-client-secret';
+process.env.GOOGLE\_CLIENT\_ID     = 'your-client-id';
+process.env.GOOGLE\_CLIENT\_SECRET = 'your-client-secret';
 ```
 
 Or set via Node-RED environment variables in the function node.
 
----
+\---
 
 ## Facebook OAuth Setup
 
@@ -85,21 +96,21 @@ Or set via Node-RED environment variables in the function node.
 5. In Node-RED, set:
 
 ```js
-process.env.FACEBOOK_APP_ID     = 'your-app-id';
-process.env.FACEBOOK_APP_SECRET = 'your-app-secret';
+process.env.FACEBOOK\_APP\_ID     = 'your-app-id';
+process.env.FACEBOOK\_APP\_SECRET = 'your-app-secret';
 ```
 
----
+\---
 
 ## Node-RED Auth Endpoints
 
-| Method | Endpoint           | Purpose                        |
-|--------|--------------------|--------------------------------|
-| POST   | /auth/local        | Email/password login           |
-| POST   | /auth/register     | New user registration          |
-| GET    | /auth/google       | Google OAuth redirect          |
-| GET    | /auth/facebook     | Facebook OAuth redirect        |
-| GET    | /auth/*/callback   | OAuth callback → JWT response  |
+|Method|Endpoint|Purpose|
+|-|-|-|
+|POST|/auth/local|Email/password login|
+|POST|/auth/register|New user registration|
+|GET|/auth/google|Google OAuth redirect|
+|GET|/auth/facebook|Facebook OAuth redirect|
+|GET|/auth/\*/callback|OAuth callback → JWT response|
 
 ### Expected response format (POST /auth/local):
 
@@ -117,33 +128,37 @@ process.env.FACEBOOK_APP_SECRET = 'your-app-secret';
 }
 ```
 
----
+\---
 
 ## Environment Variables
 
 Create `.env` in the project root:
 
 ```
-REACT_APP_NR_URL=http://localhost:1880
+REACT\_APP\_NR\_URL=http://localhost:1880
 ```
 
----
+\---
 
 ## Dashboard Features
 
 **Flow Canvas**
-- Live SVG flow visualization with animated connectors
-- Per-node status: idle / running / done / warn / error
-- Execution time overlays and sparkline history
-- Per-node timing bars
+
+* Live SVG flow visualization with animated connectors
+* Per-node status: idle / running / done / warn / error
+* Execution time overlays and sparkline history
+* Per-node timing bars
 
 **Debug Logs**
-- Filterable by level (DEBUG / INFO / WARN / ERROR)
-- Full-text search
-- Payload inspector on click
-- WebSocket live feed from Node-RED
+
+* Filterable by level (DEBUG / INFO / WARN / ERROR)
+* Full-text search
+* Payload inspector on click
+* WebSocket live feed from Node-RED
 
 **Config Tab**
-- Node-RED URL configuration
-- Auth provider status overview
-- Setup guide for Google & Facebook
+
+* Node-RED URL configuration
+* Auth provider status overview
+* Setup guide for Google \& Facebook
+
