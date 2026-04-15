@@ -10,7 +10,7 @@
 * logs information are highlighted with different levels
 
 
-
+![](https://raw.githubusercontent.com/tech-inducers/ether/main/images/login.png)
 ![](https://raw.githubusercontent.com/tech-inducers/ether/main/images/dash_board.png)
 
 ## Project Structure
