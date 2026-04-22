@@ -18,7 +18,8 @@
            *Control Plane - execute and monitor agents
            *Design Plane  - generate agent ,agent with integration protocol support defined in the flow
             *Agents       - Python agent generated with protocol support /mqtt/Kafka/local environment with configuration including task provided to LLM.
-                                                                                   
+https://github.com/tech-inducers/ether-agents
+https://github.com/tech-inducers/ether-dashboard                                                                                   
 ## Prerequisite
 install nodered
 https://github.com/node-red/node-red
