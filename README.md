@@ -29,6 +29,8 @@ https://nodered.org/docs/creating-nodes/first-node
 install Ollama or use any public LLM with .env files for api key.
 https://ollama.com/ 
 
+
+
 ----------------------------------------------------------------------------
 
 ![](https://raw.githubusercontent.com/tech-inducers/ether/main/images/local_exec.png)
